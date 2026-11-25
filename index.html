@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CS Interview Quiz</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌊</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="blob b3"></div>
+  <div class="blob b4" id="mouse"></div>
+
+  <div class="lang" role="group" aria-label="Language">
+    <button data-l="en">EN</button>
+    <button data-l="fr">FR</button>
+  </div>
+
+  <header>
+    <h1></h1>
+    <p class="lead"></p>
+  </header>
+
+  <div class="bar">
+    <div class="row">
+      <button id="rnd"></button>
+      <button id="calculate"></button>
+    </div>
+    <nav class="chips" id="chips"></nav>
+    <div class="prog" role="progressbar"><i id="pb"></i></div>
+  </div>
+
+  <main id="main"></main>
+  <dialog class="score-dialog" id="score-dialog" aria-labelledby="feedback-message">
+    <strong id="feedback-message"></strong>
+    <span id="feedback-score"></span>
+    <button id="close-score" type="button"></button>
+  </dialog>
+
+  <footer>
+    <span id="stat"></span>
+    <button id="reset"></button>
+  </footer>
+
+  <!-- data first (RAW + T), then app logic -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
